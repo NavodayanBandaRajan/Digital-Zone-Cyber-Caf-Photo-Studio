@@ -1,0 +1,1042 @@
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- AOS CSS Library -->
+<link rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+    
+    <title>Digital Zone Cyber Café & Photo Studio</title>
+  <style>
+  
+  body{
+    margin: auto;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #000000);
+    padding: 0px;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+ .navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   top: 0;
+   z-index: 1000;
+   background: transparent;
+   backface-visibility: blur(15px);
+   position: fixed;
+   box-sizing: border-box;
+   border-radius: 14px;
+   border: solid 3px cyan;
+   text-align: center;
+   overflow: hidden ;
+ } 
+ .logo{
+   color: cyan;
+   text-align: center;
+ }
+
+ .nav{
+   text-decoration: none;
+ }
+  
+  .nav a{
+    color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .section{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 11px;
+    border-radius: 14px;
+    margin-top: 53px;
+  }
+  #home{
+  text-align: center;  
+  margin-top: 84px;
+  padding: 0px;
+  overflow: hidden;
+  }
+  .home-heading{
+    text-align: center;
+    color: cyan;
+    margin-top: 30px;
+    padding: 6px;
+  }
+  .home-sub-heading{
+    text-align: center;
+    color: cyan;
+    margin-top: 11px;
+    padding: 8px;
+  }
+  .home-description{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 8px;
+  }
+  .home-paragraph{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 8px;
+  }
+  .home-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+  }
+  button{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 4px solid cyan;
+    border-radius: 32px;
+    background-color: #f97316;
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    transform: translateY(-13px);
+  }
+  button:active{
+    transition: translateX(-13px);
+  }
+  .hero{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    
+  }
+  .hero h2{
+    color: cyan;
+  }
+  .typing-container{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .typing-container h2{
+    font-size: 35px;
+    color: cyan;
+  }
+  #typing{
+    color: cyan;
+    border-right: 2px solid cyan;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink{
+    50%{border-color: transparent;
+  }
+    
+  }
+  
+  #about{
+  text-align: center;  
+  margin-top: 34px;
+  padding: 0px;
+  overflow: hidden;
+  }
+  .about-heading{
+    text-align: center;
+    color: cyan;
+    margin-top: 30px;
+    padding: 6px;
+  }
+  
+  .about-paragraph{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 8px;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background: transparent;
+    overflow: hidden;
+  }
+  .about-container h3{
+    color: cyan;
+    text-align: center;
+  }
+  .about-highlight-cards{
+    width: 70%;
+    height: 40vh;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: auto;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-radius: 32px;
+    background-color: #111111;
+    transition: all 0.3s ease;
+     color: white;
+  }
+  .about-highlight-cards:hover{
+    transform: translatey(-13px);
+    background-color: green;
+  }
+  
+  #services{
+    text-align: center;
+    padding: 0px;
+    margin-top: 34px;
+  }
+  .services-heading h2{
+    color: cyan;
+    text-align: center;
+    margin-top: 43px;
+  }
+  /* Cards ko ek ke neeche ek dikhane ke liye */
+.services-container{
+  display: flex;
+  flex-direction: column;   /* Vertical layout */
+  gap: 20px;                /* Cards ke beech space */
+  align-items: center;      /* Center me align */
+  background: transparent;
+  margin: auto;
+}
+.services-container ol li{
+  color: white;
+}
+
+
+/* Har image/card ki width */
+  .services-card{
+  text-align: center;
+  color: white;
+   width: 300px;
+   height: 70px;
+  object-fit: cover;
+  border-radius: 20px;
+  font-size: 17px;
+   font-weight: bold;
+   margin-top: 13px;
+  box-sizing: border-box;
+   border: 4px solid white;
+   cursor: pointer;
+   background-color: #111111;
+   transition: all 0.3 ease-in-up;
+}
+  .services-card:hover{
+    transform: translatey(-13px);
+    background-color: green;
+  }
+  
+  #gallery{
+    text-align: center;
+    padding: 0px;
+    margin-top: 34px;
+    margin: auto;
+  }
+  #gallery h2{
+    color: cyan;
+  }
+    /* Gallery Images */
+    .gallery-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery-container img{
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px){
+  .gallery-container img{
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+  }
+}
+.gallery-container img{
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.gallery-container img:hover{
+  transform: scale(1.03);
+}
+
+/* Lightbox Background */
+#lightbox{
+  display: none;               /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Full Screen Image */
+#lightbox-img{
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+/* Close Button */
+#close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#close:hover{
+  color: #ef4444;
+}
+
+ #pricelist{
+    text-align: center;
+    padding: 0px;
+    margin-top: 34px;
+  }
+  .pricelist-heading h2{
+    color: cyan;
+    text-align: center;
+    margin-top: 47px;
+  }
+  /* Cards ko ek ke neeche ek dikhane ke liye */
+.pricelist-container{
+  display: flex;
+  flex-direction: column;   /* Vertical layout */
+  gap: 20px;                /* Cards ke beech space */
+  align-items: center;      /* Center me align */
+  background: transparent;
+  margin: auto;
+}
+.pricelist-container ol li{
+  color: white;
+}
+
+
+/* Har image/card ki width */
+  .pricelist-card{
+  text-align: center;
+  color: white;
+   width: 300px;
+   height: 70px;
+  object-fit: cover;
+  border-radius: 20px;
+  font-size: 17px;
+   font-weight: bold;
+   margin-top: 13px;
+  box-sizing: border-box;
+   border: 4px solid white;
+   cursor: pointer;
+   background-color: #111111;
+   transition: all 0.3s ese;
+}
+ .pricelist-card:hover{
+   transform: translateY(-9px);
+   background-color: yellow;
+   color: black;
+ } 
+ 
+
+#contact{
+  text-align: center;
+    padding: 0px;
+    margin-top: 34px;
+    margin: auto;
+}
+#contact h2{
+  color: cyan;
+    text-align: center;
+    margin-top: 43px;
+}
+.contact-info{
+  color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: auto;
+  padding: 0px;
+  width: 70%;
+  min-height: 80vh;
+}
+.contact-form input,
+.contact-form textarea{
+  height: 44px;
+  box-shadow: border-box;
+  border: solid 2px white;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  background-color: #111111;
+  margin-top: 4px;
+  cursor: pointer;
+  
+}
+.contact-form h5{
+  color: white;
+  text-align: left;
+}
+
+#map{
+  text-align: center;
+  padding: 20px;
+  margin-top: 34px;
+  overflow: hidden;
+}
+
+.map-heading h2{
+  color: cyan;
+  font-size: 36px;
+}
+
+.map-heading p{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.map-container{
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  border: 4px solid cyan;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
+
+.map-container iframe{
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+@media (max-width: 768px){
+  .map-heading h2{
+    font-size: 28px;
+  }
+
+  .map-heading p{
+    font-size: 16px;
+  }
+
+  .map-container iframe{
+    height: 300px;
+  }
+}
+
+
+#footer{
+  min-height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #111;
+}
+.footer-hading{
+  color: cyan;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+}
+.footer-links{
+  text-decoration: none;
+}
+.footer-links a{
+  text-decoration: none;
+  margin: 4px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.footer links a:hover{
+  color: cyan;
+}
+.footer links a:active{
+  color: cyan;
+}
+.contact-summary{
+  margin-top: 23px;
+  color: white;
+  text-align: center;
+
+}
+.contact-summary h3{
+  color: cyan;
+}
+.copyright{
+  color: gray;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+  #lightbox-img{
+    max-width: 95%;
+    max-height: 85%;
+  }
+
+  #close{
+    font-size: 40px;
+    top: 15px;
+    right: 20px;
+  }
+}
+  </style>
+  </head>
+  <body>
+    
+    <div class="navbar">
+      
+      <div class="logo">
+        <h2> Digital Zone</h2>
+      </div>
+      
+      <div class="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#pricelist">PRICE LIST</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#map">MAP</a>
+        <a href="#footer">FOOTER</a>
+      </div>
+    </div>
+    
+    <div class="section" id="home">
+      <br>
+      <br>
+      <div class="home-heading">
+        <h1>Digital Zone Cyber Café & Photo Studio</h1>
+      </div>
+      
+      <div class="home-sub-heading">
+        <h2>One Stop Solution for All Digital Services</h2>
+      </div>
+      
+      <div class="hero">
+
+  <h2>Hi, I'm Rajan 👋</h2>
+
+  <div class="typing-container">
+    <h2>I am <span id="typing"></span></h2>
+  </div>
+  
+  <div class="home-paragraph">
+     <p>Frontend Web Developer & Student</p> 
+  </div>
+
+
+
+      
+      <div class="home-description">
+        <p>We provide printing, scanning, online form filling, passport photos and many other digital services with fast and reliable support.</p>
+      </div>
+      
+      <div class="home-buttons">
+        <button type="viewservices"  onclick="location.href='#services'"> View Services </button>
+        
+        <button type="view-contact" onclick="location.href='#contact'"> Contact 
+        </button> 
+      </div>
+   </div> <!-- home-description close -->
+   </div> <!-- hero close -->
+    
+    
+    <div class="section" id="about">
+      <br>
+      <br>
+      <br>
+       <div class="about-heading">
+        <h2>About Us</h2>
+      </div>
+      
+      <div class="about-paragraph">
+        <p>Digital Zone Cyber Café & Photo Studio offers professional digital and photo services for students, job seekers and local customers.</p>
+      </div>
+      
+      <div class="about-container">
+        <h3> Highlights </h3>
+        <div class="about-highlight-cards">
+          <p>
+            <ul>
+              <li>Experienced Staff</li>
+              <br>
+              <li>Fast Service</li>
+              <br>
+              <li>Affordable Prices</li>
+              <br>
+              <li>High Quality Printing</li>
+              <br>
+              <li>Professional Photo Editing</li>
+              <br>
+              <li>Customer Satisfaction</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" id="services">
+      <br>
+      <br>
+      <br>
+    <div class="services-heading">
+      <h2> Services </h2>  
+      </div>
+      
+      <div class="services-container">
+        
+        <ol>
+          <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Online Form Filling</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Resume / CV Design</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+        <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Black & White Printing</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Color Printing</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+       <br> 
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Document Scanning</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Lamination</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+        <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>passport photo</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Photo Editing</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+       <br> 
+        <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>PAN Card Assistance</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+      <br>  
+         <li>
+            <div class="services-card">
+          <p>
+            <ul>
+              <li>Internet Browsing</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        </ol>
+      </div>
+    </div>
+    <br>
+    <div class="section" id="gallery">
+      <br>
+      <br>
+      <br>
+      <!-- GALLERY SECTION -->
+<div class="section" id="gallery">
+  <br>
+      <br>
+      <br>
+      <br>
+  <h2> Gallery</h2>
+
+  <div class="gallery-container">
+    <img src="https://picsum.photos/800/500?1" alt="Pizza 1">
+    <img src="https://picsum.photos/800/500?2" alt="Pizza 2">
+    <img src="https://picsum.photos/800/500?3" alt="Pizza 3">
+    <img src="https://picsum.photos/800/500?4" alt="Pizza 4">
+    <img src="https://picsum.photos/800/500?5" alt="Pizza 5">
+    <img src="https://picsum.photos/800/500?6" alt="Pizza 6">
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="close">&times;</span>
+  <img id="lightbox-img" alt="Preview Image">
+</div>
+    </div>
+    
+    <div class="section" id="pricelist">
+      <br>
+      <br>
+      <br>
+      <div class="pricelist-heading">
+        <br>
+        <h2>Price List</h2>
+    </div>
+      <div class="pricelist-container">
+        
+        <ol>
+          <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>B/W Print – ₹2/page</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Color Print – ₹10/page</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+        <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Scan – ₹5/page</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Lamination – ₹30/page</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Passport Photos – ₹50/photo</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+         <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Resume Design – ₹100/each</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        <br>
+        <li>
+            <div class="pricelist-card">
+          <p>
+            <ul>
+              <li>Photo Editing – ₹150/each</li>
+            </ul>
+          </p>
+        </div>
+        </li>
+        </ol>
+      </div>
+      </div>
+
+    
+    <div class="section" id="contact">
+      <br>
+      <br>
+      <br>
+      <h2> Contact us</h2>
+      
+      <div class="contact-info">
+        <h3> Get in touch </h3>
+        <br>
+        <br>
+        <p>
+          <ul>
+ <li>📍 Address: Digital Zone,Your City</li>
+            <br>
+ <li>📞 Phone: +91 XXXXX XXXXX</li>
+            <br>
+ <li>📧 Email: info@digitalzone.com</li>
+            <br>
+<li>🕒 Hours: 8:00 AM – 9:00 PM</li>
+          </ul>
+        </p>
+      </div>
+      
+      <form class="contact-form">
+     <h5>  Name: </h5><input type="text" placeholder="Your Name" required>
+     <br>
+     <h5>  Email: </h5><input type="email" placeholder="Your Email" required>
+     <br>
+     <h5>  Phone no. : </h5><input type="tel" placeholder="Your Phone number" required>
+     <br>
+<h5>Service Required: </h5><input type="text" placeholder="Required Service" required>
+     <br>
+<h5>Message: </h5><textarea placeholder="Your Message" required> Your Message </textarea>
+     <br>
+<h5> Submit </h5><button type="submit"> Send Message</button>
+      </form>
+    </div>
+    
+    <div class="section" id="map">
+      <br>
+      <br>
+      <br>
+    <div class="map-heading">
+    <h2>Our Location</h2>
+    <br>
+    <p>Visit Digital Zone Cyber Café & Photo Studio</p>
+  </div>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=Pakhi+Cyber+Cafe+Prayagraj&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+    </div>
+    
+    <div class="section" id="footer">
+      <br>
+      <br>
+      <br>
+      <div class="footer-hading">
+        <h2>Digital Zone Cyber Café & Photo Studio</h2>
+        <br>
+      <br>
+      <h3>Fast, Reliable and Affordable Digital Services</h3>
+      </div>
+      <br>
+      <div class="footer-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#pricelist">PRICE LIST</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#map">MAP</a>
+      </div>
+      <br>
+      <br>
+      <div class="contact-summary">
+        <h3> Get in touch </h3>
+        <p>
+          <ul>
+<li>📍 Address: Digital Zone,Your City</li>
+            <br>
+   <li>📞 Phone: +91 XXXXX XXXXX</li>
+            <br>
+<li>📧 Email: info@digitalzone.com</li>
+          </ul>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>© 2026 Rajan Digital Zone | All Rights Reserved</p>
+      </div>
+    </div>
+    
+    <script>
+// ================= AOS INITIALIZE =================
+AOS.init({
+  duration: 1000,
+  once: false
+});
+
+// ================= CONTACT FORM =================
+document.querySelector(".contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("📩 Your message has been sent successfully!");
+  this.reset();
+});
+
+// ================= TYPING EFFECT =================
+const texts = [
+  "Rajan",
+  "Web Developer",
+  "Junior Frontend Developer"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const typing = document.getElementById("typing");
+  const currentText = texts[textIndex];
+
+  if (!isDeleting) {
+    typing.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex > currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1200);
+      return;
+    }
+  } else {
+    typing.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      textIndex++;
+
+      if (textIndex === texts.length) {
+        textIndex = 0;
+      }
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? 60 : 120);
+}
+
+// Typing Effect Start
+typeEffect();
+
+// ================= GALLERY LIGHTBOX =================
+const images = document.querySelectorAll(".gallery-container img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("close");
+
+// Image click
+images.forEach(image => {
+  image.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = image.src;
+  });
+});
+
+// Close button click
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Click outside image to close
+lightbox.addEventListener("click", (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.style.display = "none";
+  }
+});
+</script>
+  </body>
+</html>
