@@ -109,6 +109,11 @@ Flexible images and containers
 Media queries for smaller screens
 
 
+pages link:
+
+https://navodayanbandarajan.github.io/Digital-Zone-Cyber-Caf-Photo-Studio/
+
+
 🛠 Technologies Used
 
 HTML5
